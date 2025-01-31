@@ -103,15 +103,9 @@ def bfs(farm: list[list[str]], coords: tuple[int, int]):
                     farm[coord[0]][coord[1]] = "."
                     area += 1
                     corners += inc_corners_by(coord, checked)
-                    # for i in farm:
-                    #     print("".join(i))
-                    # print(corners)
-                    # print("\n")
 
             queue.pop(idx)
 
-    # for i, j in checked:
-    #     farm[i][j] = "."
     return area * corners
 
 
